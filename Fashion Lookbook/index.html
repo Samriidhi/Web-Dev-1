@@ -5,13 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fashion Lookbook</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <!-- Hero Section -->
   <header class="hero">
     <h1>Fashion Lookbook</h1>
     <p>Discover the latest trends</p>
+    <div id="fav-heart" data-state="empty">
+      <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-heart-fill" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M8 1.314C3.562-3.248-7.534 4.735 8 15 23.534 4.736 12.438-3.248 8 1.314z" />
+      </svg>
+      <span id="fav-count">0</span>
+    </div>
   </header>
+  
 
   <!-- Gallery Section -->
   <section class="gallery">
@@ -20,6 +28,8 @@
       <div class="card-info">
         <h2>Casual Chic</h2>
         <p>A perfect outfit for a sunny day.</p>
+      </br>
+        <i class="fa fa-heart save-icon" data-id="1" aria-hidden="true"></i>
       </div>
     </div>
     <div class="card">
@@ -27,6 +37,8 @@
       <div class="card-info">
         <h2>Evening Elegance</h2>
         <p>For your stylish night out.</p>
+      </br>
+        <i class="fa fa-heart save-icon" data-id="2" aria-hidden="true"></i>
       </div>
     </div>
     <div class="card">
@@ -34,6 +46,8 @@
       <div class="card-info">
         <h2>Office Ready</h2>
         <p>Smart and professional.</p>
+      </br>
+        <i class="fa fa-heart save-icon" data-id="3" aria-hidden="true"></i>
       </div>
     </div>
     <div class="card">
@@ -41,6 +55,8 @@
       <div class="card-info">
         <h2>Street Style</h2>
         <p>Trendy and bold looks.</p>
+      </br>
+        <i class="fa fa-heart save-icon" data-id="4" aria-hidden="true"></i>
       </div>
     </div>
     <div class="card">
@@ -48,6 +64,8 @@
       <div class="card-info">
         <h2>Boho Vibes</h2>
         <p>Relaxed and artsy.</p>
+      </br>
+        <i class="fa fa-heart save-icon" data-id="5" aria-hidden="true"></i>
       </div>
     </div>
     <div class="card">
@@ -55,6 +73,8 @@
       <div class="card-info">
         <h2>Classic Black</h2>
         <p>Timeless and elegant.</p>
+      </br>
+        <i class="fa fa-heart save-icon" data-id="6" aria-hidden="true"></i>
       </div>
     </div>
     <div class="card">
@@ -62,6 +82,8 @@
       <div class="card-info">
         <h2>Summer Fresh</h2>
         <p>Light and breezy outfits.</p>
+      </br>
+        <i class="fa fa-heart save-icon" data-id="7" aria-hidden="true"></i>
       </div>
     </div>
     <div class="card">
@@ -69,6 +91,8 @@
       <div class="card-info">
         <h2>Winter Warmth</h2>
         <p>Cozy and chic for the season.</p>
+      </br>
+        <i class="fa fa-heart save-icon" data-id="8" aria-hidden="true"></i>
       </div>
     </div>
     <div class="card">
@@ -76,6 +100,8 @@
       <div class="card-info">
         <h2>Party Glam</h2>
         <p>Shimmer and sparkle!</p>
+      </br>
+        <i class="fa fa-heart save-icon" data-id="9" aria-hidden="true"></i>
       </div>
     </div>
     <div class="card">
@@ -83,6 +109,8 @@
       <div class="card-info">
         <h2>Monochrome Magic</h2>
         <p>Stylish in black and white.</p>
+      </br>
+        <i class="fa fa-heart save-icon" data-id="10" aria-hidden="true"></i>
       </div>
     </div>
     <div class="card">
@@ -90,6 +118,8 @@
       <div class="card-info">
         <h2>Weekend Casual</h2>
         <p>Comfort meets style.</p>
+      </br>
+        <i class="fa fa-heart save-icon" data-id="11" aria-hidden="true"></i>
       </div>
     </div>
     <div class="card">
@@ -97,13 +127,17 @@
       <div class="card-info">
         <h2>Sports Luxe</h2>
         <p>Athleisure at its best.</p>
+      </br>
+        <i class="fa fa-heart save-icon" data-id="12" aria-hidden="true"></i>
       </div>
     </div>
-  </section>
+  
+  
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2024 Fashion Lookbook. All rights reserved.</p>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
