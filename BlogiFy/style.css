@@ -61,14 +61,49 @@ body {
   .create-post-btn:hover {
     background: #0056b3;
   }
-  
-  .hero {
-    background-image: url('Images/background.jpg');
-      background-size: cover; 
-      background-position: center; 
-    padding: 8rem 0;
+  @keyframes backgroundAnimation {
+    0% { background-image: url('images/img2.jpg'); }
+    33% { background-image: url('images/img3.jpg'); }
+    66% { background-image: url('images/img4.jpg'); }
+    100% { background-image: url('images/img1.jpg'); }
+}
+
+ 
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust based on your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-  }
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundAnimation 10s infinite ease-in-out;
+    transition: background-image 1s ease-in-out;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+  z-index: 1;
+}
+.highlight-text {
+  color: #FFFF00; /* Bright yellow */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow */
+}
+
+
+
+
+
   
   .hero-content h1 {
     font-size: 3.5rem;
